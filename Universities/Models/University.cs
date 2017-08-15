@@ -9,7 +9,10 @@ namespace Universities.Models
     {
         public int UniversityId { get; set; }
         public string Name { get; set; }
-        public int YearEstablishment { get; set; }
-        public int Description { get; set; }
+        public string Country { get; set; }
+        public int Rank { get; set; }
+        public int NumberOfStudents { get; set; }
+        public double InternationalStudent { get; set; } //in percent!
+
     }
 }
