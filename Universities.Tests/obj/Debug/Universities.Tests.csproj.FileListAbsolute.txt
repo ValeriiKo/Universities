@@ -46,3 +46,8 @@ C:\Users\valer\Source\Repos\Universities\Universities.Tests\obj\Debug\Universiti
 C:\Users\valer\Source\Repos\Universities\Universities.Tests\obj\Debug\Universities.Tests.pdb
 C:\Users\valer\Source\Repos\Universities\Universities.Tests\bin\Debug\Ninject.dll
 C:\Users\valer\Source\Repos\Universities\Universities.Tests\bin\Debug\Ninject.xml
+C:\Users\valer\Source\Repos\Universities\Universities.Tests\bin\Debug\Domain.dll
+C:\Users\valer\Source\Repos\Universities\Universities.Tests\bin\Debug\Domain.pdb
+C:\Users\valer\Source\Repos\Universities\Universities.Tests\bin\Debug\EntityFramework.dll
+C:\Users\valer\Source\Repos\Universities\Universities.Tests\bin\Debug\Domain.dll.config
+C:\Users\valer\Source\Repos\Universities\Universities.Tests\bin\Debug\EntityFramework.xml

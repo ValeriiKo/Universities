@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Domain.Entities.University>
+
+@{
+    ViewBag.Title = "Universities";
+}
+
+<h2>List of the 5 best world's universities</h2>
+@foreach (var university in Model)
+{
+    <div class="item">
+        <h3>@university.Name</h3>
+        @university.Country
+        @university.Rank.ToString()
+        @university.NumberOfStudents.ToString()
+        @university.InternationalStudent.ToString("##0")%
+    </div>
+}
+

@@ -14,7 +14,7 @@ namespace Universities
         {
             AreaRegistration.RegisterAllAreas();
 
-            DependencyResolver.SetResolver(new NinjectDepedencyResolver());// регистрация спец. распознователя зависимостей
+            ControllerBuilder.Current.SetControllerFactory(new NinjectControllerFactory());
 
             RouteConfig.RegisterRoutes(RouteTable.Routes);
         }

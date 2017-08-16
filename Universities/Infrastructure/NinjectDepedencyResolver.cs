@@ -1,36 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Web.Mvc;
+using System.Web.Routing;
 using Ninject;
 using Ninject.Parameters;
 using Ninject.Syntax;
 using System.Configuration;
-using Universities.Models;
+using Domain.Concrete;
+using Domain.Abstract;
 
 namespace Universities.Infrastructure
 {
-    public class NinjectDepedencyResolver: IDependencyResolver
+    public class NinjectControllerFactory: DefaultControllerFactory
     {
         private IKernel kernel;
-        public NinjectDepedencyResolver()
+        public NinjectControllerFactory()
         {
             kernel = new StandardKernel();
             AddBindings();
         }
 
-        public object GetService(Type serviceType)
+        protected override IController GetControllerInstance(RequestContext requestContext, Type controllerType)
         {
-            return kernel.TryGet(serviceType);
-        }
-
-        public IEnumerable<object> GetServices(Type serviceType)
-        {
-            return kernel.GetAll(serviceType);
+            return controllerType == null ? null : (IController)kernel.Get(controllerType);
         }
 
         private void AddBindings()
         {
-            kernel.Bind<IValueCalculator>().To<LinqValueCalculator>();
+            kernel.Bind<IUniversityRepository>().To<EFUniversityRepository>();
         }
     }
 }
