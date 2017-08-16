@@ -3,7 +3,8 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
-.vs/ - убрал папку .vs
+
+.vs/ - СѓР±СЂР°Р» РїР°РїРєСѓ .vs
 
 # User-specific files
 *.suo
