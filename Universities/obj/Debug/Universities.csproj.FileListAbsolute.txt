@@ -45,3 +45,5 @@ C:\Users\valer\Source\Repos\Universities\Universities\bin\System.Web.Mvc.xml
 C:\Users\valer\Source\Repos\Universities\Universities\obj\Debug\Universities.csprojResolveAssemblyReference.cache
 C:\Users\valer\Source\Repos\Universities\Universities\obj\Debug\Universities.dll
 C:\Users\valer\Source\Repos\Universities\Universities\obj\Debug\Universities.pdb
+C:\Users\valer\Source\Repos\Universities\Universities\bin\Ninject.dll
+C:\Users\valer\Source\Repos\Universities\Universities\bin\Ninject.xml

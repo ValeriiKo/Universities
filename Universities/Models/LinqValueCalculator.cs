@@ -5,9 +5,9 @@ using System.Web;
 
 namespace Universities.Models
 {
-    public class LinqValueCalculator
+    public class LinqValueCalculator: IValueCalculator
     {
-        public double ValueStudents(IEnumerable<University> universities)
+        public int ValueStudents(IEnumerable<University> universities)
         {
             return universities.Sum(p => p.NumberOfStudents);
         }

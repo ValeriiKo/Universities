@@ -44,3 +44,5 @@ C:\Users\valer\Source\Repos\Universities\Universities.Tests\bin\Debug\System.Web
 C:\Users\valer\Source\Repos\Universities\Universities.Tests\obj\Debug\Universities.Tests.csprojResolveAssemblyReference.cache
 C:\Users\valer\Source\Repos\Universities\Universities.Tests\obj\Debug\Universities.Tests.dll
 C:\Users\valer\Source\Repos\Universities\Universities.Tests\obj\Debug\Universities.Tests.pdb
+C:\Users\valer\Source\Repos\Universities\Universities.Tests\bin\Debug\Ninject.dll
+C:\Users\valer\Source\Repos\Universities\Universities.Tests\bin\Debug\Ninject.xml

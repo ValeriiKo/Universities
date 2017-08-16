@@ -7,13 +7,13 @@ namespace Universities.Models
 {
     public class PopulationStudents
     {
-        private LinqValueCalculator calc;
-        public PopulationStudents(LinqValueCalculator calcParam)
+        private IValueCalculator calc;
+        public PopulationStudents(IValueCalculator calcParam)
         {
             calc = calcParam;
         }
         public IEnumerable<University> Universities { get; set; }
-        public double CalculateTotalStudents()
+        public int CalculateTotalStudents()
         {
             return calc.ValueStudents(Universities);
         }

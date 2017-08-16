@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Universities.Models;
+using Ninject;
 
 namespace Universities.Controllers
 {
@@ -22,11 +23,18 @@ namespace Universities.Controllers
             new University{Name="Massachusetts Institute of Technology", Country="United States",
                 Rank =5, NumberOfStudents=11192, InternationalStudent=34}
         };
+
+        private IValueCalculator calc;
+
+        public HomeController(IValueCalculator calcParam)
+        {
+            calc = calcParam;
+        }
+
         public ActionResult Index()
         {
-            LinqValueCalculator calc = new LinqValueCalculator();
             PopulationStudents cart = new PopulationStudents(calc) {Universities=universities};
-            double totalStudents = cart.CalculateTotalStudents();
+            int totalStudents = cart.CalculateTotalStudents();
             return View(totalStudents);
         }
     }
