@@ -8,11 +8,11 @@
 @foreach (var university in Model)
 {
     <div class="item">
-        <h3>@university.Name</h3>
-        @university.Country
-        @university.Rank.ToString()
-        @university.NumberOfStudents.ToString()
-        @university.InternationalStudent.ToString("##0")%
+        <h3>University: @university.Name</h3>
+        Country: @university.Country <br/>
+        Rank: @university.Rank.ToString() <br />
+        Count of students: @university.NumberOfStudents.ToString()<br />
+        Percent of international students: @university.InternationalStudent.ToString("##0")%<br />
     </div>
 }
 
